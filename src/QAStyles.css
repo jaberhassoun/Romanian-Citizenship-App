@@ -1,0 +1,73 @@
+/* QAStyles.css */
+
+.container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .question, .answer {
+    margin: 20px auto;
+    width: 80%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .question h2, .answer h2 {
+    color: #333;
+  }
+  
+  .img-container {
+    margin: 20px auto;
+    width: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  
+  .button-container {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  button.circular {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+  }
+  
+  button.speak {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  

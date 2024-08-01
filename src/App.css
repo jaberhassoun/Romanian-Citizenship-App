@@ -1,0 +1,164 @@
+/* Reset and Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #74ABE2, #5563de);
+  color: #333;
+}
+
+/* Main Content Styles */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height, ensures centering */
+  justify-content: center; /* Center content vertically */
+  padding: 20px 0; /* Padding top and bottom */
+}
+
+/* Vertical Card Container */
+.container {
+  align-content: center;
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  border: 4px solid rgba(255, 255, 255, 0.18);
+  margin-bottom: 20px; /* Space below the container */
+}
+
+/* Styles for the rest of the elements (select, button, img, etc.) remain the same */
+
+/* Custom Scrollbar for Webkit Browsers (Optional) */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.5);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #5563de;
+  border-radius: 20px;
+  border: 2px solid rgba(255,255,255,0.5);
+}
+
+
+/* Dropdown Menu Styles */
+.dropdown-container select {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+/*   align-items: center;
+  align-self: center;
+  align-content: center; */
+}
+
+/* Container for the question and navigation buttons */
+.question-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
+  margin-bottom: 20px; /* Space below the question */
+}
+
+/* Navigation Button Styles (Previous and Next) */
+.nav-button {
+  padding: 10px; /* Adjust padding to ensure buttons are circular and have space inside */
+  font-size: 16px; /* Adjust font size for readability */
+  color: #fff; /* White text color */
+  background-color: #007bff; /* Blue background */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Cursor indicates clickable */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+}
+
+.nav-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.1); /* Slightly enlarge buttons on hover */
+}
+
+/* Ensure .circular class is correctly applied for round shape */
+.circular {
+  border-radius: 50%; /* Maintain circular shape */
+}
+
+/* Adjustments for the question text to ensure it stays centered */
+.question {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0 20px; /* Space around the question text */
+}
+
+
+/* Question and Answer Styles */
+.answer {
+  margin: 10px 0;
+  font-size: 27px;  
+}
+
+/* Image Styles */
+img {  
+  align-self: center;
+  max-width: 100%;
+  height:auto;
+  margin: 25px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.7);
+}
+
+/* Button Styles */
+button {
+  margin: 10px;
+  padding: 15px 15px; /* Adjusted for circular shape */
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  outline: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+
+/* Specific Styles for the Speak Button */
+.speak-button {
+  display: block; /* Ensures the button is on its own row */
+  margin: 20px auto; /* Centers the button horizontally */
+  padding: 10px 40px; /* Adjust padding as needed */
+  border-radius: 20px; /* Rounded corners for the speak button */
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+/*     .dropdown-container select,
+    button,
+    .speak-button {
+      width: 100%;      
+      padding: 15px;
+    } */
+
+
+  button.circular {
+    padding: 30%; 
+    /* Ensures circular shape even on mobile */
+  }
+}

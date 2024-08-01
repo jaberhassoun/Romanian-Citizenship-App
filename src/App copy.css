@@ -1,0 +1,95 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Container for Centrally Aligning Content */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Dropdown Menu Styles */
+.dropdown-container select {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Question and Answer Styles */
+.question, .answer {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+/* Image Styles */
+img {
+  max-width: 90%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Button Styles */
+button {
+  margin: 10px;
+  padding: 15px 15px; /* Adjusted for circular shape */
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  outline: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Circular Buttons for Next and Previous */
+.circular {
+  border-radius: 50%; /* Makes the buttons circular */
+}
+
+/* Specific Styles for the Speak Button */
+.speak-button {
+  display: block; /* Ensures the button is on its own row */
+  margin: 20px auto; /* Centers the button horizontally */
+  padding: 10px 40px; /* Adjust padding as needed */
+  border-radius: 20px; /* Rounded corners for the speak button */
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .dropdown-container select, button, .speak-button {
+    width: 100%; /* Makes buttons and dropdown fill the container */
+    padding: 15px;
+  }
+
+  .speak-button {
+    margin-top: 20px;
+  }
+
+  button.circular {
+    padding: 30%; /* Ensures circular shape even on mobile */
+  }
+}
